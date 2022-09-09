@@ -21,7 +21,6 @@ function App() {
       }
     })
     const data = await res.json();
-    console.log(data);
     data.success ? setCurrencyAmount2(data.result) : setCurrencyAmount2("");
   }
   const fetchByInput2 = async () => {
@@ -35,7 +34,6 @@ function App() {
           }
       })
       const data = await res.json();
-      console.log(data);
       data.success ? setCurrencyAmount1(data.result) : setCurrencyAmount1("");
   }
   useEffect(() => {
