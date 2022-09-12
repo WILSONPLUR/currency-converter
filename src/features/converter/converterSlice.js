@@ -47,7 +47,6 @@ const converterSlice = createSlice({
             switch(payload.type) {
                 case "SELECT1":
                     state.selectedCurrency1 = payload.value;
-                    console.log(state.selectedCurrency1);
                     break;
                 case "SELECT2":
                     state.selectedCurrency2 = payload.value;
