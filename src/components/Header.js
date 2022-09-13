@@ -32,7 +32,7 @@ const Header = () => {
             else if(document.activeElement === select2.current) {
                 dispatch(fetchByInput2({fromCurrency: selectedCurrency2, toCurrency: selectedCurrency1, amount: currencyAmount2}))
             }
-        }, 1000);
+        }, 200);
         return () => clearTimeout(delayDebounceFunction);
     }, [currencyAmount1, currencyAmount2, selectedCurrency1, selectedCurrency2])
     return (
